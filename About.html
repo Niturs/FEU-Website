@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEU ROOSEVELT MARIKINA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .title {
+            background: url('images/hpbg.png') no-repeat center center/cover;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #89cff0, #ffcccb);
+            text-align: center;
+        }
+
+        .images-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .content h2 {
+            font-family: 'Goudy Bookletter 1911';
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #EFBF04;
+        }
+
+        .content p {
+            font-family: 'Goudy Bookletter 1911';
+            font-size: 1.3rem;
+            color: #000;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .cinematic-frame {
+            position: relative;
+            width: 700px;
+            height: 390px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 15px solid #2c3e50;
+            background: #111;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .cinematic-frame::before, 
+        .cinematic-frame::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 15px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .cinematic-frame::before {
+            left: -15px;
+            transform: rotate(-2deg);
+        }
+
+        .cinematic-frame::after {
+            right: -15px;
+            transform: rotate(2deg);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .about-image {
+            width: 550px;
+            height: 730px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+            border: 10px dashed palegoldenrod;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/feur_logo.png" alt="FEUR Logo" class="logo-image">
+                <div class="university-name">Far Eastern University</div>
+            </div>
+            <ul class="burger-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#events" class="dropdown-toggle">Events</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Halloween.html">FEU Roosevelt Halloween</a></li>
+                        <li><a href="SinagSports.html">Sinag Sports</a></li>
+                        <li><a href="Christmas.html">Pre-Christmas Activities </a></li>
+                        <li><a href="SinagTamaraws.html">Sinag Tamaraws</a></li>
+                    </ul>
+                </li>
+                <li><a href="Additionals.html">Additionals</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="content" class="content">
+            <div class="content-wrapper">
+                <section>
+                    <h2>LIFE LESSONS IN THIS COLLEGE JOURNEY</h2>
+                    <div class="video-container">
+                        <div class="cinematic-frame">
+                            <iframe src="https://www.youtube.com/embed/eRaBqLRGv7w?feature=shared"
+                                title="video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>ABOUT US</h2>
+                    <div class="images-container">
+                        <div class="image-row">
+                            <img src="./images/About/a1.png" alt="Image 1" class="about-image">
+                            <img src="./images/About/a2.png" alt="Image 2" class="about-image">
+                        </div>
+                        <div class="image-row">
+                            <img src="./images/About/a3.png" alt="Image 3" class="about-image">
+                            <img src="./images/About/a4.png" alt="Image 4" class="about-image">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/FEURooseveltMar" target="_blank" class="icon">
+                    <img src="./images/HP/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/feurooseveltmar?igsh=MXRvYzFiMTB4OGV4" target="_blank" class="icon">
+                    <img src="./images/HP/ig.png" alt="Instagram">
+                </a>
+                <a href="https://x.com/FEURooseveltMar?t=p9o9hoJLavyLdw9B-eameA&s=09" target="_blank" class="icon">
+                    <img src="./images/HP/tw.png" alt="Twitter">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>Tel No: +632 8941-4093</p>
+                <p>CP No: 0960-558-1889</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

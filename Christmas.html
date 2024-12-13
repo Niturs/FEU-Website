@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEU ROOSEVELT MARIKINA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .title {
+            background: url('./images/hpbg.png') no-repeat center center/cover;
+        }
+
+        body {
+            margin: 0;
+            background: radial-gradient(circle at center, #bccd61, #ae6a5e, #83e268);
+            color: #f5f5f5;
+            overflow-x: hidden;
+        }
+
+        .horizontal-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 50px auto;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .horizontal-images img {
+            max-width: 200px;
+            border-radius: 20px;
+            transition: transform 0.5s ease, filter 0.5s ease, box-shadow 0.5s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            filter: brightness(0.9) saturate(0.9);
+            border: 3px solid transparent;
+        }
+
+        .horizontal-images img:hover {
+            transform: scale(1.2) rotate(-3deg);
+            filter: brightness(1.2) saturate(1.5);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            border: 3px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .caption {
+            text-align: center;
+            font-family: 'Goudy Bookletter 1911';
+            font-size: 24px;
+            line-height: 1.8;
+            color: #000;
+            margin-top: 20px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+            padding: 25px 35px;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+            margin: 30px auto;
+            animation: slideUp 1.5s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/feur_logo.png" alt="FEUR Logo" class="logo-image">
+                <div class="university-name">Far Eastern University</div>
+            </div>
+            <ul class="burger-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#events" class="dropdown-toggle">Events</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Halloween.html">FEU Roosevelt Halloween</a></li>
+                        <li><a href="SinagSports.html">Sinag Sports</a></li>
+                        <li><a href="Christmas.html">Pre-Christmas Activities </a></li>
+                        <li><a href="SinagTamaraws.html">Sinag Tamaraws</a></li>
+                    </ul>
+                </li>
+                <li><a href="Additionals.html">Additionals</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="title" class="title">
+            <div class="overlay"></div>
+            <div class="title-content">
+                <h1>Christmas Tree Lightning</h1>
+            </div>
+        </section>
+        <section id="content" class="content">
+            <div class="content-wrapper">
+                <div class="horizontal-images">
+                    <img src="images/Christmas/xm3.png" alt="Image xm3">
+                    <img src="images/Christmas/xm9.png" alt="Image xm9">
+                    <img src="images/Christmas/xm8.png" alt="Image xm8">
+                    <img src="images/Christmas/xm7.png" alt="Image xm7">
+                </div>
+                <p class="caption">We are preparing and cutting materials for a recyclable project to craft a white
+                    sheep. Using recycled plastic bottles, we carefully shape and assemble the parts. Teamwork and
+                    innovation are the heart of this project.</p>
+
+                <div class="horizontal-images">
+                    <img src="images/Christmas/xm2.png" alt="Image xm2">
+                    <img src="images/Christmas/xm5.png" alt="Image xm5">
+                    <img src="images/Christmas/xm6.png" alt="Image xm6">
+                    <img src="images/Christmas/xm11.png" alt="Image xm11">
+                </div>
+                <p class="caption">Gathered under the radiant Christmas tree, this group celebrates the holiday season
+                    during a school Christmas lighting event. The warm lights and vibrant decorations create the perfect
+                    backdrop for a memorable evening. It's a moment of togetherness, joy, and holiday cheer!</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/FEURooseveltMar" target="_blank" class="icon">
+                    <img src="./images/HP/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/feurooseveltmar?igsh=MXRvYzFiMTB4OGV4" target="_blank" class="icon">
+                    <img src="./images/HP/ig.png" alt="Instagram">
+                </a>
+                <a href="https://x.com/FEURooseveltMar?t=p9o9hoJLavyLdw9B-eameA&s=09" target="_blank" class="icon">
+                    <img src="./images/HP/tw.png" alt="Twitter">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>Tel No: +632 8941-4093</p>
+                <p>CP No: 0960-558-1889</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

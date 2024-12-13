@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEU ROOSEVELT MARIKINA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #F57C00, #FDA172, #EABD6C);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #000;
+        }
+
+        .title {
+            background: url('./images/hwbg.jpeg') no-repeat center center/cover;
+        }
+
+        .image-and-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10rem;
+        }
+
+        .left-image {
+            max-width: 40%;
+            height: auto;
+            border: 10px ridge #B06500;
+        }
+
+        .right-paragraph {
+            max-width: 55%;
+            font-family: 'Goudy Bookletter 1911';
+            font-size: 24px;
+            line-height: 2;
+            text-align: justify;
+        }
+
+        .horizontal-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .horizontal-images img {
+            width: 23%;
+            height: auto;
+            border-radius: 8px;
+            border: 10px ridge #B06500;
+        }
+
+        .caption {
+            font-family: 'Goudy Bookletter 1911';
+            font-size: 22px;
+            line-height: 2;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/feur_logo.png" alt="FEUR Logo" class="logo-image">
+                <div class="university-name">Far Eastern University</div>
+            </div>
+            <ul class="burger-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#events" class="dropdown-toggle">Events</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Halloween.html">FEU Roosevelt Halloween</a></li>
+                        <li><a href="SinagSports.html">Sinag Sports</a></li>
+                        <li><a href="Christmas.html">Pre-Christmas Activities </a></li>
+                        <li><a href="SinagTamaraws.html">Sinag Concert</a></li>
+                    </ul>
+                </li>
+                <li><a href="Additionals.html">Additionals</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="title" class="title">
+            <div class="overlay"></div>
+            <div class="title-content">
+                <h1>FEU Roosevelt Halloween</h1>
+            </div>
+        </section>
+        <section id="content" class="content">
+            <div class="content-wrapper">
+                <div class="image-and-text">
+                    <img src="./images/Halloween/hw1.jpg" alt="Halloween Image 1" class="left-image">
+                    <p class="right-paragraph">The Halloween party at FEU was full of excitement, with students dressed
+                        in fun costumes. Kids went around collecting treats and enjoying the festive atmosphere.
+                        Everyone had a great time celebrating the spooky season together. The event was a great way to
+                        foster a sense of community and creativity, making it a memorable occasion for all involved.</p>
+                </div>
+
+                <div class="horizontal-images">
+                    <img src="./images/Halloween/hw2.jpg" alt="Halloween Image 2">
+                    <img src="./images/Halloween/hw3.jpg" alt="Halloween Image 3">
+                    <img src="./images/Halloween/hw4.jpg" alt="Halloween Image 4">
+                    <img src="./images/Halloween/hw5.jpg" alt="Halloween Image 5">
+                </div>
+
+                <p class="caption">
+                    The FEU Halloween Cosplay event brought vibrant energy to the campus as students from various levels
+                    showcased their creativity by dressing up as characters from different genres. The atmosphere was
+                    lively, with students passionately portraying their chosen personas through detailed costumes and
+                    performances. The event featured a mix of outdoor activities, stage presentations, and indoor
+                    gatherings, where participants celebrated their enthusiasm for cosplay and Halloween festivities,
+                    creating a memorable and colorful celebration.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/FEURooseveltMar" target="_blank" class="icon">
+                    <img src="./images/HP/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/feurooseveltmar?igsh=MXRvYzFiMTB4OGV4" target="_blank" class="icon">
+                    <img src="./images/HP/ig.png" alt="Instagram">
+                </a>
+                <a href="https://x.com/FEURooseveltMar?t=p9o9hoJLavyLdw9B-eameA&s=09" target="_blank" class="icon">
+                    <img src="./images/HP/tw.png" alt="Twitter">
+                </a>
+            </div>
+            <div class="contact-info">
+                <p>Tel No: +632 8941-4093</p>
+                <p>CP No: 0960-558-1889</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
